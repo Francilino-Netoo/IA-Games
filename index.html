@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>APIs-Automações-IAs</title>
+  </head>
+
+  <body>
+    <div class="caixa-principal" id="home">
+      <nav>
+        <h2 class="portfolio">Automação<span>Afobada</span></h2>
+        <ul>
+          <li><a class="link-menu" href="#fale-comigo">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="meu-nome">
+        <h1>
+          Automatize suas entradas com suas próprias estratégias e explore
+          diversas opções para personalizar suas automações!
+        </h1>
+      </div>
+
+      <div class="robos-projetos">
+        <div class="bucetao">
+          <a
+            href="https://drive.google.com/drive/folders/15qjxxzJD4qfHGcssZj3CJ-3ML1-JZD8e?usp=drive_link"
+            target="_blank"
+            ><img src="./img/capas/1.png" alt="Projeto Baccarat" />
+          </a>
+
+          <a href="#" class="link-sem-destino">
+            <img src="./img/capas/2.png" alt="Projeto Bac Bo" />
+          </a>
+          <a href="#" class="link-sem-destino">
+            <img src="./img/capas/5.png" alt="Projeto Football Studio" />
+          </a>
+          <a href="#" class="link-sem-destino">
+            <img src="./img/capas/6.png" alt="Projeto Roleta Brasileira" />
+          </a>
+          <a href="#" class="link-sem-destino">
+            <img src="./img/capas/7.png" alt="Projeto Stock Market" />
+          </a>
+          <a href="#" class="link-sem-destino">
+            <img src="./img/capas/8.png" alt="Projeto Mega Bacara" />
+          </a>
+        </div>
+      </div>
+      <div class="ia-mercado">
+        <h1>Que tal ter acesso a melhor IA do mercado?</h1>
+      </div>
+      <div class="teucu-pro">
+        <div class="area-ia">
+          <a
+            href="https://drive.google.com/drive/folders/1RHhQ1VAec9TKnA3V2XEtWbW60BTVnnZx?usp=drive_link"
+            target="_blank"
+            ><img src="./img/capas/9.jpg" alt="IA Afobada" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer id="fale-comigo">
+      <h5>Programador Full Stack</h5>
+      <p>Entre em contato</p>
+
+      <div class="social">
+        <a href="https://t.me/programador_python" target="_blank"
+          ><img src="./img/tel.png" alt="Telegram"
+        /></a>
+        <a href="https://github.com/Francilino-Netoo" target="_blank"
+          ><img src="./img/git.png" alt="GitHub"
+        /></a>
+      </div>
+    </footer>
+    <!-- Caixa de aviso -->
+    <div id="aviso" class="aviso">
+      <p>Robô esta em atualização, aguarde ate ser liberado.</p>
+      <button onclick="fecharAviso()">Fechar</button>
+    </div>
+    <script>
+      let slideIndex = 0;
+
+      function moveSlider(n) {
+        const slides = document.querySelectorAll(".cards");
+        slideIndex += n;
+
+        if (slideIndex < 0) {
+          slideIndex = slides.length - 1;
+        } else if (slideIndex >= slides.length) {
+          slideIndex = 0;
+        }
+
+        slides[slideIndex].scrollIntoView({
+          behavior: "smooth",
+          inline: "start",
+        });
+      }
+
+      function mostrarAviso() {
+        document.getElementById("aviso").classList.add("show");
+      }
+
+      function fecharAviso() {
+        document.getElementById("aviso").classList.remove("show");
+      }
+
+      document.querySelectorAll(".link-sem-destino").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          mostrarAviso();
+        });
+      });
+    </script>
+  </body>
+</html>
