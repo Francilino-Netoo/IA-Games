@@ -4,428 +4,293 @@
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
-/* Media Queries */
-@media (max-width: 3000px) {
-  .aviso {
-    display: none;
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px;
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-    border-radius: 5px;
-    z-index: 1000;
-  }
 
-  .aviso.show {
-    display: block;
-  }
+.aviso {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  z-index: 1000;
+}
 
-  .aviso p {
-    margin: 0;
-    margin-bottom: 20px;
-  }
+.aviso.show {
+  display: block;
+}
 
-  .aviso .button {
-    padding: 10px 20px;
-    background-color: #721c24;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.aviso p {
+  margin: 0;
+  margin-bottom: 20px;
+}
 
-  .aviso .button:hover {
-    background-color: #f5c6cb;
-  }
+.aviso .button {
+  padding: 10px 20px;
+  background-color: #721c24;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-  }
+.aviso .button:hover {
+  background-color: #f5c6cb;
+}
 
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    background-color: rgba(24, 24, 24, 0.9);
-    padding: 10px 20px;
-    margin-top: 1%;
-  }
+body {
+  margin: 0;
+  padding: 0;
+}
 
-  .portfolio {
-    color: #ffffff;
-    font-size: 25px;
-  }
+nav {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(24, 24, 24, 1);
+  padding: 2% 5%;
+}
 
-  .portfolio span {
-    color: #f9004d;
-  }
+.portfolio {
+  color: #ffffff;
+  font-size: 25px;
+}
 
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
+.portfolio span {
+  color: #f9004d;
+}
 
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  color: white;
+  font-size: 18px;
+  margin-right: 10%;
+}
+
+.link-menu {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.link-menu:hover {
+  color: #f9004d;
+  transition: 0.5s;
+}
+
+.caixa-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: #181818;
+}
+
+.meu-nome {
+  text-align: center;
+  width: 80%;
+  max-width: 80%;
+  padding: 1%;
+  background-color: rgba(62, 71, 62, 0.3);
+  border-radius: 5px;
+}
+
+.meu-nome h1 {
+  color: #ffffff;
+  font-size: 20px;
+  word-wrap: break-word;
+}
+
+.robos-projetos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.bucetao {
+  display: flex;
+}
+
+.bucetao a {
+  flex: 1;
+}
+
+.bucetao img {
+  width: 60%;
+  height: 80%;
+  object-fit: fill;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(2, 245, 14, 0.8);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.bucetao img:hover {
+  transform: scale(1.1);
+}
+
+.ia-mercado {
+  text-align: center;
+  width: 80%;
+  max-width: 80%;
+  padding: 20px;
+  background-color: rgba(62, 71, 62, 0.3);
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.ia-mercado h1 {
+  color: #ffffff;
+  font-size: 20px;
+  word-wrap: break-word;
+}
+
+.teucu-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.area-ia {
+  display: flex;
+}
+
+.area-ia a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.area-ia img {
+  width: 20%;
+  height: 80%;
+  object-fit: fill;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(2, 229, 245, 0.8);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.area-ia img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #111010ef;
+  padding: 60px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h5 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+.social img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.social a {
+  background-color: #f9004d;
+  padding: 10px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.social a:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
   nav li {
     color: white;
-    font-size: 18px;
+    font-size: 14px;
   }
-
+  .portfolio {
+    font-size: 15px;
+  }
   .link-menu {
-    text-decoration: none;
-    color: #ffffff;
+    font-size: 12px;
   }
-
-  .link-menu:hover {
-    color: #f9004d;
-    transition: 0.5s;
-  }
-
-  .caixa-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-color: #181818;
-  }
-
   .meu-nome {
-    text-align: center;
-    width: 80%;
-    max-width: 50%;
-    padding: 1%;
-    background-color: rgba(62, 71, 62, 0.3);
-    border-radius: 15px;
-  }
-
-  .meu-nome h1 {
-    color: #ffffff;
-    font-size: 22px;
-    word-wrap: break-word;
-  }
-
-  .robos-projetos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 5%;
     width: 100%;
+    max-width: 90%;
+    padding: 15px;
+    margin-top: 1%;
+  }
+  .meu-nome h1 {
+    font-size: 12px;
   }
 
-  .bucetao {
+  .ia-mercado {
+    width: 100%;
+    max-width: 90%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  .ia-mercado h1 {
+    font-size: 12px;
+  }
+  .robos-projetos {
+    margin-top: 20px;
     display: flex;
-    gap: 30px;
-  }
-
-  .bucetao a {
-    flex: 0 0 auto;
+    padding: 1%;
+    width: 100%;
   }
 
   .bucetao img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(2, 245, 14, 0.8);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-
-  .bucetao img:hover {
-    transform: scale(1.1);
-  }
-
-  .ia-mercado {
-    text-align: center;
-    width: 80%;
-    max-width: 50%;
-    padding: 20px;
-    background-color: rgba(62, 71, 62, 0.3);
-    border-radius: 15px;
-    margin-bottom: 2%;
-  }
-
-  .ia-mercado h1 {
-    color: #ffffff;
-    font-size: 28px;
-    word-wrap: break-word;
-  }
-
-  .teucu-pro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .area-ia {
-    display: flex;
-    margin-top: 30px;
-  }
-
-  .area-ia a {
-    display: flex;
-    margin-top: -30px;
-    margin-bottom: 40px;
-  }
-
-  .area-ia img {
-    width: 50px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(2, 209, 245, 0.8);
-    transition: transform 0.3s ease;
-  }
-
-  .area-ia img:hover {
-    transform: scale(1.1);
-  }
-
-  footer {
-    background-color: #111010ef;
-    padding: 60px 20px 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  footer h5 {
-    color: #ffffff;
-    font-size: 24px;
-  }
-
-  footer p {
-    color: #ffffff;
-    font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  .social {
-    display: flex;
-    gap: 15px;
-  }
-
-  .social img {
-    height: 40px;
-    border-radius: 50%;
-  }
-
-  .social a {
-    background-color: #f9004d;
-    padding: 10px;
-    display: flex;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    transition: transform 0.5s;
-  }
-
-  .social a:hover {
-    transform: scale(1.2);
-  }
-}
-
-/* Media Queries */
-@media (max-width: 2000px) {
-  nav {
-    padding: 15px;
-  }
-
-  .portfolio {
-    font-size: 24px;
-  }
-
-  .meu-nome {
-    width: 90%;
-    padding: 15px;
-    margin-top: 1%;
-  }
-
-  .bucetao img,
-  .area-ia img {
-    width: 120px;
-  }
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  nav {
-    padding: 5%;
-    margin-top: -12%;
-  }
-  nav li {
-    color: white;
-    font-size: 20px;
-  }
-  .portfolio {
-    font-size: 20px;
-  }
-
-  .meu-nome {
-    width: 100%;
-    max-width: 90%;
-    padding: 15px;
-    margin-top: 1%;
-  }
-  .meu-nome h1 {
-    font-size: 20px;
-  }
-
-  .ia-mercado {
-    width: 100%;
-    max-width: 90%;
-  }
-  .ia-mercado h1 {
-    font-size: 20px;
-  }
-
-  .bucetao img,
-  .area-ia img {
-    width: 100px;
-  }
-}
-
-@media (max-width: 490px) {
-  nav {
-    padding: 5%;
-    margin-top: 1%;
-  }
-  nav li {
-    color: white;
-    font-size: 14px;
-  }
-  .portfolio {
-    font-size: 14px;
-  }
-
-  .meu-nome {
-    width: 100%;
-    max-width: 90%;
-    padding: 15px;
-    margin-top: 1%;
-  }
-  .meu-nome h1 {
-    font-size: 12px;
-  }
-
-  .ia-mercado {
-    width: 100%;
-    max-width: 90%;
-    margin-top: 100px;
-    margin-bottom: 30px;
-  }
-  .ia-mercado h1 {
-    font-size: 12px;
-  }
-  .robos-projetos {
-    margin-top: 20px;
-    display: flex;
-    padding: 10%;
-    width: 100%;
-  }
-  .bucetao {
-    gap: 10px;
-    margin-left: 70px;
-    margin-right: -15px;
-  }
-
-  .bucetao img {
-    width: 60px;
+    max-width: 70%;
     box-shadow: 0 1px 2px rgba(2, 245, 14, 0.8);
     border-radius: 1px;
+    margin: 5px 5px;
   }
   .area-ia img {
     width: 100px;
-  }
-
-  footer {
-    padding: 60px 20px 80px;
-  }
-  .aviso {
-    width: 70%;
-    padding: 10px;
-    top: 15%;
-  }
-
-  .aviso p {
-    margin: 0;
-    margin-bottom: 15px;
-    font-size: 12px;
-  }
-
-  .aviso .button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 414px) {
-  nav {
-    padding: 5%;
-  }
-  nav li {
-    color: white;
-    font-size: 14px;
-  }
-  .portfolio {
-    font-size: 14px;
-  }
-
-  .meu-nome {
-    width: 100%;
-    max-width: 90%;
-    padding: 15px;
-    margin-top: 1%;
-  }
-  .meu-nome h1 {
-    font-size: 12px;
-  }
-
-  .ia-mercado {
-    width: 100%;
-    max-width: 90%;
-    margin-top: 100px;
-    margin-bottom: 20px;
-  }
-  .ia-mercado h1 {
-    font-size: 12px;
-  }
-  .robos-projetos {
-    margin-top: 20px;
-    display: flex;
-    padding: 15%;
-    width: 100%;
-  }
-  .bucetao {
-    gap: 10px;
-    margin-left: 70px;
-    margin-right: -40px;
-  }
-  .bucetao img {
-    width: 60px;
-    box-shadow: 0 1px 2px rgba(2, 245, 14, 0.8);
     border-radius: 1px;
-  }
-  .area-ia img {
-    width: 100px;
+    box-shadow: 0 1px 2px rgba(2, 188, 245, 0.8);
   }
 
   footer {
@@ -449,18 +314,17 @@
   }
 }
 
-@media (max-width: 380px) {
-  nav {
-    padding: 5%;
-  }
+@media (max-width: 415px) {
   nav li {
     color: white;
     font-size: 14px;
   }
   .portfolio {
-    font-size: 14px;
+    font-size: 15px;
   }
-
+  .link-menu {
+    font-size: 12px;
+  }
   .meu-nome {
     width: 100%;
     max-width: 90%;
@@ -483,28 +347,29 @@
   .robos-projetos {
     margin-top: 20px;
     display: flex;
-    padding: 15%;
+    padding: 1%;
     width: 100%;
   }
-  .bucetao {
-    gap: 10px;
-    margin-left: 10px;
-    margin-right: -45px;
-  }
+
   .bucetao img {
-    width: 60px;
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
     box-shadow: 0 1px 2px rgba(2, 245, 14, 0.8);
     border-radius: 1px;
+    margin: 5px 5px;
   }
   .area-ia img {
     width: 100px;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(2, 188, 245, 0.8);
   }
 
   footer {
     padding: 60px 20px 80px;
   }
   .aviso {
-    width: 55%;
+    width: 60%;
     padding: 10px;
     top: 15%;
   }
@@ -512,27 +377,26 @@
   .aviso p {
     margin: 0;
     margin-bottom: 15px;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .aviso .button {
     padding: 8px 16px;
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
-@media (max-width: 330px) {
-  nav {
-    padding: 5%;
-  }
+@media (max-width: 395px) {
   nav li {
     color: white;
     font-size: 14px;
   }
   .portfolio {
-    font-size: 14px;
+    font-size: 15px;
   }
-
+  .link-menu {
+    font-size: 12px;
+  }
   .meu-nome {
     width: 100%;
     max-width: 90%;
@@ -555,28 +419,29 @@
   .robos-projetos {
     margin-top: 20px;
     display: flex;
-    padding: 15%;
+    padding: 1%;
     width: 100%;
   }
-  .bucetao {
-    gap: 10px;
-    margin-left: 70px;
-    margin-right: -40px;
-  }
+
   .bucetao img {
-    width: 60px;
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
     box-shadow: 0 1px 2px rgba(2, 245, 14, 0.8);
     border-radius: 1px;
+    margin: 5px 5px;
   }
   .area-ia img {
     width: 100px;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(2, 188, 245, 0.8);
   }
 
   footer {
     padding: 60px 20px 80px;
   }
   .aviso {
-    width: 55%;
+    width: 60%;
     padding: 10px;
     top: 15%;
   }
@@ -584,11 +449,155 @@
   .aviso p {
     margin: 0;
     margin-bottom: 15px;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .aviso .button {
     padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  nav li {
+    color: white;
+    font-size: 14px;
+  }
+  .portfolio {
+    font-size: 15px;
+  }
+  .link-menu {
     font-size: 12px;
+  }
+  .meu-nome {
+    width: 100%;
+    max-width: 90%;
+    padding: 15px;
+    margin-top: 1%;
+  }
+  .meu-nome h1 {
+    font-size: 12px;
+  }
+
+  .ia-mercado {
+    width: 100%;
+    max-width: 90%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  .ia-mercado h1 {
+    font-size: 12px;
+  }
+  .robos-projetos {
+    margin-top: 20px;
+    display: flex;
+    padding: 5%;
+    width: 100%;
+  }
+
+  .bucetao img {
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    box-shadow: 0 1px 2px rgba(2, 245, 14, 0.8);
+    border-radius: 1px;
+    margin: 5px 5px;
+  }
+  .area-ia img {
+    width: 100px;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(2, 188, 245, 0.8);
+  }
+
+  footer {
+    padding: 60px 20px 80px;
+  }
+  .aviso {
+    width: 60%;
+    padding: 10px;
+    top: 15%;
+  }
+
+  .aviso p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 11px;
+  }
+
+  .aviso .button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  nav li {
+    color: white;
+    font-size: 12px;
+  }
+  .portfolio {
+    font-size: 10px;
+  }
+  .link-menu {
+    font-size: 10px;
+  }
+  .meu-nome {
+    width: 100%;
+    max-width: 90%;
+    padding: 10px;
+    margin-top: 20%;
+  }
+  .meu-nome h1 {
+    font-size: 12px;
+  }
+
+  .ia-mercado {
+    width: 100%;
+    max-width: 90%;
+    margin-top: 25px;
+    margin-bottom: 5%;
+  }
+  .ia-mercado h1 {
+    font-size: 12px;
+  }
+  .robos-projetos {
+    margin-top: 1%;
+    display: flex;
+    padding: 12%;
+    width: 100%;
+  }
+
+  .bucetao img {
+    width: 100%;
+    height: 100%;
+    max-width: 80%;
+    box-shadow: 0 1px 2px rgba(2, 245, 14, 0.8);
+    border-radius: 1px;
+    margin: 5px 5px;
+  }
+  .area-ia img {
+    width: 80px;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(2, 188, 245, 0.8);
+  }
+
+  footer {
+    padding: 60px 20px 80px;
+  }
+  .aviso {
+    width: 60%;
+    padding: 10px;
+    top: 15%;
+  }
+
+  .aviso p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 11px;
+  }
+
+  .aviso .button {
+    padding: 8px 16px;
+    font-size: 13px;
   }
 }
