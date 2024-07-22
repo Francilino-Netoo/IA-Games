@@ -121,29 +121,20 @@ nav li {
   align-items: center;
   margin-top: 50px;
   width: 80%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 1%;
-  margin-bottom: 20px;
 }
 
 .bucetao {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
 }
 
 .bucetao a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 1;
 }
 
 .bucetao img {
-  width: auto;
-  height: 200px;
-  object-fit: contain;
+  width: 60%;
+  height: 80%;
+  object-fit: fill;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(2, 245, 14, 0.8);
   cursor: pointer;
@@ -153,6 +144,7 @@ nav li {
 .bucetao img:hover {
   transform: scale(1.1);
 }
+
 .ia-mercado {
   text-align: center;
   width: 80%;
@@ -173,6 +165,7 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .area-ia {
@@ -186,7 +179,7 @@ nav li {
 }
 
 .area-ia img {
-  width: 50%;
+  width: 20%;
   height: 80%;
   object-fit: fill;
   border-radius: 5px;
