@@ -179,7 +179,7 @@ nav li {
 }
 
 .area-ia img {
-  width: 20%;
+  width: 45%;
   height: 80%;
   object-fit: fill;
   border-radius: 5px;
@@ -238,6 +238,17 @@ footer p {
 
 .social a:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 1900px) {
+  .meu-nome {
+    padding: 15px;
+    margin-top: 8%;
+  }
+  .area-ia img {
+    width: 35%;
+    height: 80%;
+  }
 }
 
 @media (max-width: 1280px) {
