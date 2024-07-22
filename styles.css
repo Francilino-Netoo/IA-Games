@@ -119,24 +119,31 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: auto;
-  overflow-y: hidden;
   margin-top: 50px;
   width: 80%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1%;
+  margin-bottom: 20px;
 }
 
 .bucetao {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .bucetao a {
-  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bucetao img {
-  width: 60%;
-  height: 80%;
-  object-fit: fill;
+  width: auto;
+  height: 200px;
+  object-fit: contain;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(2, 245, 14, 0.8);
   cursor: pointer;
@@ -146,7 +153,6 @@ nav li {
 .bucetao img:hover {
   transform: scale(1.1);
 }
-
 .ia-mercado {
   text-align: center;
   width: 80%;
@@ -167,7 +173,6 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .area-ia {
@@ -181,7 +186,7 @@ nav li {
 }
 
 .area-ia img {
-  width: 20%;
+  width: 50%;
   height: 80%;
   object-fit: fill;
   border-radius: 5px;
@@ -240,6 +245,13 @@ footer p {
 
 .social a:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 1280px) {
+  .meu-nome {
+    padding: 15px;
+    margin-top: 2%;
+  }
 }
 
 @media (max-width: 480px) {
